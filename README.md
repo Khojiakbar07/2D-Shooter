@@ -14,6 +14,6 @@ video game from scratch in a few hours.
 The game is released under a Creative Commons License (see code and
 readme files in the sprites folder for more details).
 The sprites are taken from a [tutorial on Gamedevtuts+](http://gamedevelopment.tutsplus.com/series/build-a-space-based-shoot-em-up-in-construct-2--gamedev-12704)
-and were designed by [Jacob Zinman-Jeanes](http://jeanes.co).
+and were designed by [Khojiakbar Zokirov](https://github.com/Khojiakbar07).
 The C# code for Unity3D has been written from scratch and the gameplay kept simple for
 didactic purposes.
