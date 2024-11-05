@@ -81,6 +81,7 @@ public class Controller : MonoBehaviour
         Coin++;
         CoinText.text = "Coin: " + Coin.ToString();
         GetComponent<AudioSource>().Play();
+
     }
 
     /// <summary>
