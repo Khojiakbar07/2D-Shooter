@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using static UnityEditor.Timeline.TimelinePlaybackControls;
 
 /// <summary>
 /// This class controls player movement
@@ -19,6 +21,8 @@ public class Controller : MonoBehaviour
     public float moveSpeed = 10.0f;
     [Tooltip("The speed at which the player rotates in asteroids movement mode")]
     public float rotationSpeed = 60f;
+    public int Coin;
+    public Text CoinText;
 
     //The InputManager to read input from
     private InputManager inputManager;
@@ -72,6 +76,13 @@ public class Controller : MonoBehaviour
         }
     }
 
+    public void IncreaseCoin()
+    {
+        Coin++;
+        CoinText.text = "Coin: " + Coin.ToString();
+        GetComponent<AudioSource>().Play();
+    }
+
     /// <summary>
     /// Description:
     /// Standard Unity function called once when the script starts before Update
@@ -82,6 +93,7 @@ public class Controller : MonoBehaviour
     /// </summary>
     private void Start()
     {
+        CoinText.text = "Coin: " + Coin.ToString();
         SetupInput();
     }
 

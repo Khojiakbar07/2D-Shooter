@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5470659623088554108}
   m_Layer: 0
   m_Name: 'Player '
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2934537193391203678, guid: 189ba7a3517573748bac900893e11acf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -127,6 +127,7 @@ MonoBehaviour:
   myRigidbody: {fileID: 0}
   moveSpeed: 10
   rotationSpeed: 60
+  Coin: 0
   aimMode: 0
   movementMode: 2
 --- !u!114 &61927456082937637
@@ -147,7 +148,7 @@ MonoBehaviour:
   currentHealth: 1
   invincibilityTime: 3
   isAlwaysInvincible: 0
-  useLives: 0
+  useLives: 1
   currentLives: 3
   maximumLives: 5
   deathEffect: {fileID: 6218169049356006189, guid: 68794701c80057447857bb433e54c579, type: 3}
